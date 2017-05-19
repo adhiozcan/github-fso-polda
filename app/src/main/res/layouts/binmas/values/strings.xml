@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_footer">FSO Quick Response. Copyright 2017. Polda Kepri</string>
+    <string name="always_remember">Selalu ingat saya</string>
+</resources>

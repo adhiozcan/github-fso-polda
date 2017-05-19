@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panel_uraian"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_space_16dp"
+                android:text="Bukti Foto"
+                android:textColor="@android:color/primary_text_dark"
+                android:textSize="@dimen/text_size_18sp"/>
+
+            <ImageButton
+                android:id="@+id/closed_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_square_blue_dark"
+                android:paddingLeft="@dimen/dimen_space_12dp"
+                android:paddingRight="@dimen/dimen_space_12dp"
+                android:src="@drawable/ic_action_close"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_space_8dp"
+            android:layout_marginRight="@dimen/dimen_space_8dp"
+            android:layout_marginTop="@dimen/dimen_space_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/photo1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="@dimen/dimen_space_4dp"
+                android:background="@drawable/button_dashed"
+                android:scaleType="center"
+                android:src="@drawable/ic_photo_camera"
+                android:tag=""/>
+
+            <ImageView
+                android:id="@+id/photo2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="@dimen/dimen_space_8dp"
+                android:background="@drawable/button_dashed"
+                android:scaleType="center"
+                android:src="@drawable/ic_photo_camera"
+                android:tag=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_space_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/photo3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="@dimen/dimen_space_4dp"
+                android:background="@drawable/button_dashed"
+                android:scaleType="center"
+                android:src="@drawable/ic_photo_camera"
+                android:tag=""/>
+
+            <ImageView
+                android:id="@+id/photo4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="@dimen/dimen_space_8dp"
+                android:background="@drawable/button_dashed"
+                android:scaleType="center"
+                android:src="@drawable/ic_photo_camera"
+                android:tag=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_space_8dp"
+            android:layout_marginTop="@dimen/dimen_space_8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/photo5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="@dimen/dimen_space_4dp"
+                android:background="@drawable/button_dashed"
+                android:scaleType="center"
+                android:src="@drawable/ic_photo_camera"
+                android:tag=""/>
+
+            <ImageView
+                android:id="@+id/photo6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="@dimen/dimen_space_8dp"
+                android:background="@drawable/button_dashed"
+                android:scaleType="center"
+                android:src="@drawable/ic_photo_camera"
+                android:tag=""/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

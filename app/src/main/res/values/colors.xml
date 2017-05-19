@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01376C</color>
+    <color name="colorPrimaryDark">#022D58</color>
+    <color name="colorAccent">#ffc107</color>
+    <color name="colorRed">#E91E63</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="signalSearching">#FFFFFF</color>
+    <color name="signalDisconnect">#E91E63</color>
+    <color name="signalWeak">#ffc107</color>
+    <color name="signalStrong">#8BC34A</color>
+    <color name="button_background_pink">#E91E63</color>
+    <color name="button_background_pink_pressed">#d11c59</color>
+    <color name="button_background_green">#8BC34A</color>
+    <color name="button_background_green_pressed">#7eb143</color>
+    <color name="button_background_orange">#ffc107</color>
+    <color name="button_background_orange_pressed">#f57c00</color>
+    <color name="button_background_red">#F44336</color>
+    <color name="button_background_red_pressed">#d13429</color>
+</resources>

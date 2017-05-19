@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/panel_unsur_pidana"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_space_16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Apakah ada unsur pidana dalam kejadian ini ?"/>
+
+        <RadioGroup
+            android:id="@+id/rg_unsur_pidana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_space_16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_pidana_ya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ya ada unsur pidana"/>
+
+            <RadioButton
+                android:id="@+id/rb_pidana_tidak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak ada unsur pidana"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_option_disposisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_space_16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Untuk disposisi ke satuan kerja lainnya, berikan informasi tambahan dibawah ini : "/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Tulis disposisi disini"
+            android:inputType="textMultiLine"
+            android:minHeight="60dp"
+            android:paddingLeft="@dimen/dimen_space_16dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_versa_unsur_pidana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_space_12dp"
+        android:background="@drawable/button_square_orange"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_space_12dp"
+        android:paddingTop="@dimen/dimen_space_12dp"
+        android:text="Konfirmasi Keadaan"
+        android:textColor="@android:color/primary_text_dark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="@dimen/dimen_space_16dp"
+        android:background="#DBE1E8"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appcompat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/dimen_space_2dp"
+        android:popupTheme="@style/ToolbarTheme.PopUp"
+        android:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/ToolbarTheme.PopUp"/>
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="@dimen/dimen_space_16dp"
+        android:background="#043e78"
+        android:elevation="@dimen/dimen_space_2dp"
+        android:padding="@dimen/dimen_space_16dp"
+        android:src="@drawable/logo_polri"/>
+</RelativeLayout>

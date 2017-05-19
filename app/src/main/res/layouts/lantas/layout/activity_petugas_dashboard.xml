@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appcompat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:popupTheme="@style/ToolbarTheme.PopUp"
+        android:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/ToolbarTheme.PopUp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/polri_logo"
+        android:layout_width="126dp"
+        android:layout_height="126dp"
+        android:layout_below="@id/appcompat_toolbar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_polri"/>
+
+    <TextView
+        android:id="@+id/apps_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/polri_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_space_12dp"
+        android:text="Fso Polda Kepri"
+        android:textColor="@color/text_color_primary_dark"
+        android:textSize="@dimen/text_size_24sp"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/apps_title">
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_square_white"
+                android:elevation="@dimen/default_elevation_2dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Input Laporan"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="match_parent"
+                android:background="#9E9E9E"
+                android:layout_marginBottom="@dimen/dimen_space_4dp"
+                android:layout_marginTop="@dimen/dimen_space_4dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/button_square_white"
+                android:elevation="@dimen/default_elevation_2dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Input Laporan"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

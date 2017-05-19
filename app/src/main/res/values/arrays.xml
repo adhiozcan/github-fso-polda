@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_bulan">
+        <item>--Bulan--</item>
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+
+    <string-array name="list_tahun">
+        <item>--Tahun--</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+    </string-array>
+
+    <string-array name="pref_sync_intensity_entries">
+        <item>5 detik</item>
+        <item>10 detik</item>
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>Tidak Pernah</item>
+    </string-array>
+
+    <string-array name="pref_sync_intensity_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>-1</item>
+    </string-array>
+</resources>

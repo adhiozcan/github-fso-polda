@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_pelidikan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_space_16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Lakukan konfirmasi pelidikan jika selesai dilaksanakan"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/btn_versa_pelidikan_selesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_space_12dp"
+        android:background="@drawable/button_square_orange"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_space_12dp"
+        android:paddingTop="@dimen/dimen_space_12dp"
+        android:text="Penyelidikan Selesai"
+        android:textColor="@android:color/primary_text_dark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="@dimen/dimen_space_16dp"
+        android:background="#DBE1E8" />
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/appcompat_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:popupTheme="@style/ToolbarTheme.PopUp"
+            android:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/ToolbarTheme.PopUp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_space_16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="@dimen/dimen_space_16dp"
+                    android:src="@drawable/ic_analytics" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_prioritas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_space_4dp"
+                        android:layout_marginTop="@dimen/dimen_space_8dp"
+                        android:background="@drawable/button_round_orange"
+                        android:paddingBottom="@dimen/dimen_space_4dp"
+                        android:paddingLeft="@dimen/dimen_space_8dp"
+                        android:paddingRight="@dimen/dimen_space_8dp"
+                        android:paddingTop="@dimen/dimen_space_4dp"
+                        android:text="Prioritas"
+                        android:textColor="@android:color/primary_text_dark"
+                        android:textSize="@dimen/text_size_12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_judul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Judul Laporan"
+                        android:textColor="@android:color/primary_text_dark"
+                        android:textSize="@dimen/text_size_24sp" />
+
+                    <TextView
+                        android:id="@+id/txt_tanggal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="dipublish pada tanggal"
+                        android:textColor="@android:color/primary_text_dark"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_pelapor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="dilaporkan oleh "
+                        android:textColor="@android:color/primary_text_dark" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_space_16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_space_16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Status Laporan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lapor" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_space_16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Tanggal Kejadian" />
+
+                <TextView
+                    android:id="@+id/txt_tanggal_kejadian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26 Desember 2016" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_space_16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Lokasi" />
+
+                <TextView
+                    android:id="@+id/txt_lokasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum diketahui" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_space_16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Koordinat" />
+
+                <TextView
+                    android:id="@+id/txt_koordinat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_space_16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Pelaku" />
+
+                <TextView
+                    android:id="@+id/txt_pelaku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_space_16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Uraian" />
+
+                <TextView
+                    android:id="@+id/txt_uraian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_space_16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Foto Bukti" />
+
+                <TextView
+                    android:id="@+id/txt_images"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_space_16dp"
+                    android:text="Informasi Tambahan"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_space_8dp"
+                    android:gravity="center|left"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/btn_maps"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_margin="@dimen/dimen_space_4dp"
+                        android:background="@drawable/button_oval_pink"
+                        android:padding="@dimen/dimen_space_8dp"
+                        android:src="@drawable/ic_maps_light" />
+
+                    <ImageView
+                        android:id="@+id/btn_image"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_margin="@dimen/dimen_space_4dp"
+                        android:background="@drawable/button_oval_green"
+                        android:padding="@dimen/dimen_space_8dp"
+                        android:src="@drawable/ic_picture" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginTop="@dimen/dimen_space_16dp"
+                    android:background="#DBE1E8" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    app:indicatorColor="@color/colorPrimary"
+                    app:indicatorName="BallBeatIndicator" />
+
+                <TextView
+                    android:id="@+id/btn_kirim_laporan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_square_orange"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dimen_space_12dp"
+                    android:paddingTop="@dimen/dimen_space_12dp"
+                    android:text="Kirim Laporan"
+                    android:textColor="@android:color/primary_text_dark" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

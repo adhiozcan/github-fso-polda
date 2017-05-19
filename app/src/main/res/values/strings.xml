@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quick Response</string>
+
+    <string name="pref_remember_key">Always Remember</string>
+    <string name="pref_remember_title">Selalu ingat saya</string>
+    <string name="pref_remember_content">Mempertahankan informasi login Anda</string>
+    <string name="pref_offline_key">Offline Mode</string>
+    <string name="pref_offline_title">Offline Mode</string>
+    <string name="pref_offline_content">Gunakan data terakhir saat tidak ada jaringan</string>
+    <string name="pref_album_key">Photo Album</string>
+    <string name="pref_album_title">Auto Broadcast Photo Album</string>
+    <string name="pref_album_content">Simpan bukti foto ke dalam album gambar</string>
+    <string name="pref_sync_key">Sync Timer</string>
+    <string name="pref_sync_title">Auto Sync Interval</string>
+    <string name="pref_sync_content">Pengaturan intensitas pengambilan data secara online</string>
+
+</resources>

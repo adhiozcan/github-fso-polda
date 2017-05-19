@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DBE1E8"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/appcompat_toolbar"
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:popupTheme="@style/ToolbarTheme.PopUp"
+                android:theme="@style/ToolbarTheme"
+                app:popupTheme="@style/ToolbarTheme.PopUp"/>
+
+            <ImageView
+                android:id="@+id/signal_indicator"
+                android:layout_width="72dp"
+                android:layout_height="?actionBarSize"
+                android:padding="6dp"
+                android:src="@drawable/ic_action_signal_status"/>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@id/appbar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_material_black"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_space_32dp"
+                android:background="@android:color/transparent"
+                android:hint="Judul Laporan"
+                android:padding="@dimen/dimen_space_16dp"
+                android:paddingBottom="@dimen/dimen_space_8dp"
+                android:paddingTop="@dimen/dimen_space_8dp"
+                android:textColor="@android:color/primary_text_dark"
+                android:textColorHint="@android:color/primary_text_dark"
+                android:textSize="@dimen/text_size_24sp"/>
+
+            <TextView
+                android:id="@+id/txt_prioritas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_judul"
+                android:layout_marginLeft="@dimen/dimen_space_16dp"
+                android:background="@drawable/button_round_orange"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingBottom="@dimen/dimen_space_4dp"
+                android:paddingLeft="@dimen/dimen_space_12dp"
+                android:paddingRight="@dimen/dimen_space_12dp"
+                android:paddingTop="@dimen/dimen_space_4dp"
+                android:text="Pilih Prioritas"
+                android:textColor="@android:color/primary_text_dark"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/panel_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_prioritas"
+                android:layout_marginLeft="@dimen/dimen_space_8dp"
+                android:layout_marginRight="@dimen/dimen_space_8dp"
+                android:layout_marginTop="@dimen/dimen_space_16dp"
+                app:cardElevation="@dimen/dimen_space_4dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_space_12dp"
+                    android:layout_marginLeft="@dimen/dimen_space_16dp"
+                    android:layout_marginRight="@dimen/dimen_space_16dp"
+                    android:layout_marginTop="@dimen/dimen_space_12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_space_8dp"
+                        android:text="Tanggal Kejadian"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_12sp"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_space_4dp">
+
+                        <EditText
+                            android:id="@+id/ed_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:paddingBottom="@dimen/dimen_space_8dp"
+                            android:paddingTop="@dimen/dimen_space_8dp"
+                            android:textSize="@dimen/text_size_16sp"/>
+
+                        <ImageButton
+                            android:id="@+id/action_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_round_orange"
+                            android:src="@drawable/ic_date"/>
+                    </TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_space_8dp"
+                        android:text="Waktu Kejadian"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_12sp"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_space_4dp">
+
+                        <EditText
+                            android:id="@+id/ed_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:paddingBottom="@dimen/dimen_space_8dp"
+                            android:paddingTop="@dimen/dimen_space_8dp"
+                            android:textSize="@dimen/text_size_16sp"/>
+
+                        <ImageButton
+                            android:id="@+id/action_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_round_orange"
+                            android:src="@drawable/ic_time"/>
+                    </TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_space_8dp"
+                        android:text="Lokasi"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_12sp"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_space_4dp">
+
+                        <EditText
+                            android:id="@+id/ed_lokasi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Cari lokasi"
+                            android:paddingBottom="@dimen/dimen_space_8dp"
+                            android:paddingRight="@dimen/dimen_space_16dp"
+                            android:paddingTop="@dimen/dimen_space_8dp"
+                            android:textSize="@dimen/text_size_16sp"/>
+
+                        <ImageButton
+                            android:id="@+id/action_maps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_round_orange"
+                            android:src="@drawable/ic_maps_light"/>
+                    </TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_space_8dp"
+                        android:text="Koordinat"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_12sp"/>
+
+                    <EditText
+                        android:id="@+id/ed_koordinat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_space_4dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:hint="Menunggu mendapatkan koordinat Anda"
+                        android:inputType="none"
+                        android:paddingBottom="@dimen/dimen_space_8dp"
+                        android:paddingTop="@dimen/dimen_space_8dp"
+                        android:textSize="@dimen/text_size_16sp"/>
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/panel_uraian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/panel_content"
+                android:layout_marginLeft="@dimen/dimen_space_8dp"
+                android:layout_marginRight="@dimen/dimen_space_8dp"
+                android:layout_marginTop="@dimen/dimen_space_16dp"
+                app:cardElevation="@dimen/dimen_space_4dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_space_16dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pelaku"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_12sp"/>
+
+                    <EditText
+                        android:id="@+id/ed_pelaku"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="@dimen/dimen_space_8dp"
+                        android:paddingTop="@dimen/dimen_space_8dp"
+                        android:text="-"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_space_16dp"
+                        android:text="Uraian"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_12sp"/>
+
+                    <EditText
+                        android:id="@+id/ed_uraian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:minHeight="96dp"
+                        android:paddingBottom="@dimen/dimen_space_8dp"
+                        android:paddingTop="@dimen/dimen_space_8dp"
+                        android:text="-"/>
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dimen_space_16dp"
+                android:layout_marginRight="72dp"
+                android:background="#DBE1E8" />-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/panel_bukti_foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/panel_uraian"
+                android:layout_marginLeft="@dimen/dimen_space_8dp"
+                android:layout_marginRight="@dimen/dimen_space_8dp"
+                android:layout_marginTop="@dimen/dimen_space_16dp"
+                app:cardElevation="@dimen/dimen_space_4dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/panel_uraian"
+                    android:layout_marginBottom="@dimen/dimen_space_12dp"
+                    android:layout_marginLeft="@dimen/dimen_space_8dp"
+                    android:layout_marginRight="@dimen/dimen_space_8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_space_16dp"
+                        android:text="Tambahkan Bukti Foto"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_size_12sp"/>
+
+                    <TableRow>
+
+                        <ImageView
+                            android:id="@+id/photo1"
+                            android:layout_width="110dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="@dimen/dimen_space_2dp"
+                            android:layout_marginRight="@dimen/dimen_space_2dp"
+                            android:background="@drawable/button_dashed"
+                            android:onClick="takePicture"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_photo_camera"
+                            android:tag=""/>
+
+                        <ImageView
+                            android:id="@+id/photo2"
+                            android:layout_width="110dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="@dimen/dimen_space_2dp"
+                            android:layout_marginRight="@dimen/dimen_space_2dp"
+                            android:background="@drawable/button_dashed"
+                            android:onClick="takePicture"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_photo_camera"
+                            android:tag=""/>
+
+                        <ImageView
+                            android:id="@+id/photo3"
+                            android:layout_width="110dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="@dimen/dimen_space_2dp"
+                            android:layout_marginRight="@dimen/dimen_space_2dp"
+                            android:background="@drawable/button_dashed"
+                            android:onClick="takePicture"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_photo_camera"
+                            android:tag=""/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <ImageView
+                            android:id="@+id/photo4"
+                            android:layout_width="110dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="@dimen/dimen_space_2dp"
+                            android:layout_marginRight="@dimen/dimen_space_2dp"
+                            android:background="@drawable/button_dashed"
+                            android:onClick="takePicture"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_photo_camera"
+                            android:tag=""/>
+
+                        <ImageView
+                            android:id="@+id/photo5"
+                            android:layout_width="110dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="@dimen/dimen_space_2dp"
+                            android:layout_marginRight="@dimen/dimen_space_2dp"
+                            android:background="@drawable/button_dashed"
+                            android:onClick="takePicture"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_photo_camera"
+                            android:tag=""/>
+
+                        <ImageView
+                            android:id="@+id/photo6"
+                            android:layout_width="110dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="@dimen/dimen_space_2dp"
+                            android:layout_marginRight="@dimen/dimen_space_2dp"
+                            android:background="@drawable/button_dashed"
+                            android:onClick="takePicture"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_photo_camera"
+                            android:tag=""/>
+                    </TableRow>
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/panel_bukti_foto"
+                android:layout_marginTop="@dimen/dimen_space_16dp"
+                android:background="#DBE1E8"/>
+
+            <TextView
+                android:id="@+id/btn_selanjutnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator"
+                android:layout_marginBottom="@dimen/dimen_space_16dp"
+                android:layout_marginLeft="@dimen/dimen_space_8dp"
+                android:layout_marginRight="@dimen/dimen_space_8dp"
+                android:background="@drawable/button_square_orange"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:text="Selanjutnya"
+                android:textAlignment="center"
+                android:textColor="@android:color/primary_text_dark"
+                android:textSize="@dimen/text_size_16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

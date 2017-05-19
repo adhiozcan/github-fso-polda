@@ -1,0 +1,11 @@
+{
+  "prop": "Received",
+  "etype": "runFunction",
+  "value": [{
+    "method": "GUESTTGK",
+    "rows": 1,
+    "content": [{
+      "TGK": "Anda memiliki Tunggakan sebanyak 1 lembar"
+    }]
+  }]
+}

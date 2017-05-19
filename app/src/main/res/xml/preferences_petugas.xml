@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Login">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_remember_key"
+            android:summary="@string/pref_remember_content"
+            android:title="@string/pref_remember_title"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Syncing">
+
+        <ListPreference
+            android:defaultValue="4"
+            android:dialogTitle="Sync Every"
+            android:entries="@array/pref_sync_intensity_entries"
+            android:entryValues="@array/pref_sync_intensity_values"
+            android:key="@string/pref_sync_key"
+            android:summary="30 detik"
+            android:title="@string/pref_sync_title"
+            app:defaultValue="4"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_offline_key"
+            android:summary="@string/pref_offline_content"
+            android:title="@string/pref_offline_title"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Lain-lain">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_album_key"
+            android:summary="@string/pref_album_content"
+            android:title="@string/pref_album_title"/>
+    </PreferenceCategory>
+</PreferenceScreen>

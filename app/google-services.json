@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "191842359491",
+    "firebase_url": "https://fso-polda-kepri.firebaseio.com",
+    "project_id": "fso-polda-kepri",
+    "storage_bucket": "fso-polda-kepri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191842359491:android:f32f9a35d9242082",
+        "android_client_info": {
+          "package_name": "id.net.iconpln.fso.polda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191842359491-s4cqri0ejp32hgvkvn55fg0pl6gkdgka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.net.iconpln.fso.polda",
+            "certificate_hash": "10e994c8ba58e7855d4cb90d7162e2fc28f5857a"
+          }
+        },
+        {
+          "client_id": "191842359491-7s0sbht7l82rl6pp2ds25n0qbauleuq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXqfa0FKhsifB3BojIGwsZNcArVsnmY4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191842359491-7s0sbht7l82rl6pp2ds25n0qbauleuq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/container_transition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#DBE1E8"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:context="id.net.iconpln.quickresponse.ui.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_looking"/>
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#003386"/>-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/appcompat_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/dimen_space_2dp"
+            android:popupTheme="@style/ToolbarTheme.PopUp"
+            android:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/ToolbarTheme.PopUp"
+            app:title="FSO Polda Kepri">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="FSO Polda Kepri"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/container_features"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appcompat_toolbar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container_searchbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_space_8dp"
+                android:background="@color/colorWhite"
+                android:elevation="@dimen/dimen_space_2dp"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/ed_pencarian"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:elevation="@dimen/dimen_space_2dp"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Input pencarian..."
+                    android:paddingBottom="@dimen/dimen_space_14dp"
+                    android:paddingLeft="@dimen/dimen_space_16dp"
+                    android:paddingTop="@dimen/dimen_space_14dp"
+                    android:textColorHint="#30000000"
+                    android:textSize="@dimen/text_size_18sp"/>
+
+                <View
+                    android:layout_width="0.4dp"
+                    android:layout_height="match_parent"
+                    android:background="#DBE1E8"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_square_orange"
+                    android:elevation="@dimen/dimen_space_2dp"
+                    android:gravity="center"
+                    android:onClick="onSearchViewClicked"
+                    android:paddingLeft="@dimen/dimen_space_12dp"
+                    android:paddingRight="@dimen/dimen_space_12dp"
+                    android:text="Submit"
+                    android:textColor="@color/text_color_primary_dark"/>
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/container_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_space_8dp"
+                android:layout_marginRight="@dimen/dimen_space_8dp"
+                android:layout_marginTop="@dimen/dimen_space_8dp"
+                android:background="@drawable/button_square_white"
+                android:elevation="@dimen/dimen_space_2dp"
+                android:paddingBottom="@dimen/dimen_space_12dp"
+                android:paddingLeft="@dimen/dimen_space_16dp"
+                android:paddingRight="@dimen/dimen_space_16dp"
+                android:paddingTop="@dimen/dimen_space_12dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Filter Laporan"
+                    android:textColor="#dc263238"
+                    android:textStyle="bold"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/spinner_bulan"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_tahun"
+                        android:layout_width="122dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_space_8dp"
+                        android:background="@drawable/button_round_orange"
+                        android:onClick="onSubmitFilterClicked"
+                        android:paddingBottom="@dimen/dimen_space_8dp"
+                        android:paddingLeft="@dimen/dimen_space_16dp"
+                        android:paddingRight="@dimen/dimen_space_16dp"
+                        android:paddingTop="@dimen/dimen_space_8dp"
+                        android:text="Submit"
+                        android:textColor="@color/text_color_primary_dark"/>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/status_filter_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_space_8dp"
+                android:layout_marginLeft="@dimen/dimen_space_8dp"
+                android:layout_marginRight="@dimen/dimen_space_8dp"
+                android:background="@color/button_background_green"
+                android:elevation="@dimen/dimen_space_2dp"
+                android:paddingBottom="@dimen/dimen_space_8dp"
+                android:paddingLeft="@dimen/dimen_space_16dp"
+                android:paddingRight="@dimen/dimen_space_16dp"
+                android:paddingTop="@dimen/dimen_space_8dp"
+                android:text="Pilih bulan dan tahun"
+                android:textColor="#caffffff"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/line_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/container_features"
+            android:background="#DBE1E8"
+            android:visibility="gone"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_divider">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/dimen_space_16dp"
+        android:elevation="@dimen/dimen_space_4dp"
+        android:src="@drawable/ic_pencils"
+        app:backgroundTint="@color/colorRed"
+        app:rippleColor="#fa4a86"/>
+</android.support.design.widget.CoordinatorLayout>
